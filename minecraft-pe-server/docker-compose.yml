@@ -1,0 +1,11 @@
+version: '2'
+services:
+  server:
+    image: knaou/minecraft-pe-server
+    ports:
+        - 19132:19132/tcp
+        - 19132:19132/udp
+    volumes:
+        - ./server.properties:/work/server.properties
+        - ./pocketmine.yml:/work/pocketmine.yml
+
